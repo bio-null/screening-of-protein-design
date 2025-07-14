@@ -100,8 +100,8 @@ if __name__ == "__main__":
     parser.add_argument(
         "-t", "--rmsd-threshold",
         type=float,
-        default=0.2,
-        help="RMSD过滤阈值（单位：纳米，默认0.2nm=2Å）"
+        default=0.15,
+        help="RMSD过滤阈值（单位：纳米，默认0.15nm=1.5Å）"
     )
     parser.add_argument(
         "--root-path",
