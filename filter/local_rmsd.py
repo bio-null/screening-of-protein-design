@@ -72,7 +72,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="根据局部RMSD筛选蛋白质设计结果")
     parser.add_argument("-d", "--design-path", type=str, required=True, help="设计PDB文件夹路径")
     parser.add_argument("-r", "--reference-pdb", type=str, required=True, help="参考PDB文件路径")
-    parser.add_argument("-t", "--rmsd-threshold", type=float, default=0.2, help="RMSD阈值(单位: nm)")
+    parser.add_argument("-t", "--rmsd-threshold", type=float, default=0.1, help="RMSD阈值(单位: nm)")
     parser.add_argument("-s", "--selection", type=str, default="name CA", help="原子选择表达式")
     parser.add_argument("--root-path", default="./filter_results/local_rmsd", help="根目录路径")
     parser.add_argument("--output-dir", type=str, help="自定义输出目录")
